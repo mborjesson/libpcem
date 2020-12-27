@@ -1,8 +1,8 @@
 # libpcem
 
-Inspired by #doscember I also wanted to do something DOS-related this month. The result is this project, where the goal was to see if it would be possible to build [PCem](https://pcem-emulator.co.uk/) as a library.
+Inspired by #doscember I also wanted to do something DOS-related this month. The result is this project, where the goal was to see if it would be possible to build [PCem](https://pcem-emulator.co.uk/) as a library and use it in Java.
 
-It should have a simple API and the features that I needed to get DOS up and running with graphics, sound and mouse-/keyboard-input through Java.
+It should have a simple API and the features that I needed to get DOS up and running with graphics, sound and mouse-/keyboard-input.
 
 I was able to build it as a library and use it in Java through BridJ, however I quickly discovered that it instantly crashed when the dynamic recompiler was enabled. When testing it in C I found out that it worked when linked as a static library, so the dynamic recompiler is most likely not PIC-compliant which means that the emulation will be very slow when used a shared library (the cpu_use_dynarec-setting will be forced off).
 
@@ -10,11 +10,11 @@ I was able to build it as a library and use it in Java through BridJ, however I 
 
 This project has been uploaded as-is and will not be actively developed right now. If there is a lot of interest for it or if the dynamic recompiler becomes PIC-compliant in the future I might work more on it.
 
-The code was written and has only been tested on Linux and will likely not work on other sytems, mostly because I have no easy access to Windows- and Mac-systems.
+The code was written and has only been tested on Linux and will likely not work on other systems, mostly because I have no easy access to Windows- and Mac-systems.
 
 ## How to build
 
-Run these the first time to generate configuration files:
+Run these commands the first time to generate configuration files:
 ```
 libtoolize
 autoreconf
