@@ -1,0 +1,13 @@
+src/**/*.o
+src/**/.deps
+src/**/.dirstamp
+src/.libs
+src/**/*.lo
+autom4te.cache/
+.vscode/
+m4/
+libtool
+ltmain.sh
+pcem
+config.log
+config.status
