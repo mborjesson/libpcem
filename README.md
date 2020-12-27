@@ -30,7 +30,7 @@ This will by default create a static and a shared library in src/.libs/.
 
 ## How to use
 
-Check the pcem.h and pcem-config.h for all the exported functions, they all start with pcem_*. Many of the functions are for callbacks, like when there's something to render or when the keyboard- and mouse-state is polled. The configuration of the emulated machine is expected to be handled manually with the pcem_config_get, pcem_config_set and pcem_config_save functions. For convenience there's pcem_config_simple_init and pcem_config_simple_close in pcem-config.h which will make it behave a bit more automatically.
+Check the [pcem.h](https://github.com/mborjesson/libpcem/blob/master/src/pcem.h) and [pcem-config.h](https://github.com/mborjesson/libpcem/blob/master/src/pcem-config.h) for all the exported functions, they all start with pcem_*. Many of the functions are for callbacks, like when there's something to render or when the keyboard- and mouse-state is polled. The configuration of the emulated machine is expected to be handled manually with the pcem_config_get, pcem_config_set and pcem_config_save functions. For convenience there's pcem_config_simple_init and pcem_config_simple_close in pcem-config.h which will make it behave a bit more automatically.
 
 Here's a simple example that loads a configuration, sets up callbacks for rendering, audio and input polling. Then it starts the emulation, lets it run for 4 seconds and then stops:
 
@@ -116,3 +116,4 @@ int main(int argc, char** argv) {
 }}
 ```
 
+For a more complicated example see [pcem-java](https://github.com/mborjesson/pcem-java).
