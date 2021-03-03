@@ -116,4 +116,4 @@ int main(int argc, char** argv) {
 }}
 ```
 
-For a more complicated example see [pcem-java](https://github.com/mborjesson/pcem-java).
+For more examples see [libpcem-sdl2](https://github.com/mborjesson/libpcem-sdl2) and [libpcem-java](https://github.com/mborjesson/libpcem-java).
